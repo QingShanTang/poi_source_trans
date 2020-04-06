@@ -179,6 +179,6 @@ public class ExcelGenerateSql {
     }
 
     private static String getStringCellValue(XSSFRow row, Integer cellnum) {
-        return getCellPreventNull(row, cellnum).toString().trim();
+        return getCellPreventNull(row, cellnum).getStringCellValue().toString().trim();
     }
 }
